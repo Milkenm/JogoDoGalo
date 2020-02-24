@@ -16,7 +16,7 @@ namespace JogoDoGalo
 					{
 						/*
 						 * THIS WILL NEVER HAPPEN
-						 * 
+						 *
 						UpdateScores("X");
 						MessageBox.Show("Player wins!", "Jogo do Galo", MessageBoxButtons.OK, MessageBoxIcon.Information));
 						*/

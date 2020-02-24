@@ -53,6 +53,7 @@
     <Compile Include="Funcoes\Button Click.cs" />
     <Compile Include="Funcoes\Check Button Line.cs" />
     <Compile Include="Funcoes\Check Combo.cs" />
+    <Compile Include="Funcoes\Check Traps.cs" />
     <Compile Include="Funcoes\Check Victory.cs" />
     <Compile Include="Funcoes\Play Handler.cs" />
     <Compile Include="Funcoes\Pick a Side.cs" />

@@ -33,10 +33,23 @@ namespace JogoDoGalo
 				}
 			}
 			// SECOND TURN FOR THE AI (CHECK FOR THE [7/6] COMBO)
-			else if (IsSecondTurn && StaticButtonsList[5].Text == "O" && StaticButtonsList[7].Text == "X" && StaticButtonsList[6].Text == "X")
+			else if (IsSecondTurn && CheckTraps() != 0)
 			{
 				IsSecondTurn = false;
-				AIPlay(StaticButtonsList[9]);
+				int trap = CheckTraps();
+
+				if (trap == 756)
+				{
+					AIPlay(StaticButtonsList[9]);
+				}
+				else if (trap == 159 || trap == 753)
+				{
+					AIPlay(StaticButtonsList[2]);
+				}
+				else if (trap == 856)
+				{
+					AIPlay(StaticButtonsList[9]);
+				}
 			}
 			else
 			{

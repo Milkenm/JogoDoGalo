@@ -44,7 +44,6 @@ namespace JogoDoGalo
 			this.statusStrip_xWins = new System.Windows.Forms.ToolStripStatusLabel();
 			this.statusStrip_oWins = new System.Windows.Forms.ToolStripStatusLabel();
 			this.statusStrip_draws = new System.Windows.Forms.ToolStripStatusLabel();
-			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.statusStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -152,8 +151,7 @@ namespace JogoDoGalo
 			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusStrip_xWins,
             this.statusStrip_oWins,
-            this.statusStrip_draws,
-            this.toolStripStatusLabel1});
+            this.statusStrip_draws});
 			this.statusStrip.Location = new System.Drawing.Point(0, 339);
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.Size = new System.Drawing.Size(336, 22);
@@ -180,12 +178,6 @@ namespace JogoDoGalo
 			this.statusStrip_draws.Size = new System.Drawing.Size(51, 17);
 			this.statusStrip_draws.Text = "Draws: 0";
 			// 
-			// toolStripStatusLabel1
-			// 
-			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-			this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 15);
-			this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +193,7 @@ namespace JogoDoGalo
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -227,7 +220,6 @@ namespace JogoDoGalo
 		internal System.Windows.Forms.ToolStripStatusLabel statusStrip_xWins;
 		internal System.Windows.Forms.ToolStripStatusLabel statusStrip_oWins;
 		internal System.Windows.Forms.ToolStripStatusLabel statusStrip_draws;
-		internal System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
 	}
 }
 
