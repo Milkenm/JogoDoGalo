@@ -38,9 +38,13 @@ namespace JogoDoGalo
 				IsSecondTurn = false;
 				int trap = CheckTraps();
 
-				if (trap == 756)
+				if (trap == 756 || trap == 358)
 				{
 					AIPlay(StaticButtonsList[9]);
+				}
+				else if (trap == 158)
+				{
+					AIPlay(StaticButtonsList[7]);
 				}
 				else if (trap == 159 || trap == 753)
 				{
